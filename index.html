@@ -11,10 +11,36 @@
 </head>
 
 <body>
-
   <div id="app">
-    Hello<span v-bind:style="styleObject">Vue.js!</span>
-    <script src="app.js"></script>
+    <!-- <p v-if="color === 'red'">
+      STOP
+    </p>
+    <p v-else-if="color === 'yellow'">
+      Caution
+    </p>
+    <p v-else-if="color === 'blue'">
+      GO
+    </p>
+    <p v-else> 
+      Not red/yellow/blue
+    </p> -->
+
+    <!-- <input type="text" v-on:keyup.27="clear" v-model="message"> -->
+
+    <!-- <input type="text" v-on:keyup.esc="clear" v-model="message"> -->
+
+    <!-- <input type="text" v-on:keyup.esc.space.up="clear" v-model="message"> -->
+
+    <button v-on:click="clickHandler">
+      Click1
+    </button>
+
+    <button @click="clickHandler">
+      Click2
+    </button>
+
+  </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
