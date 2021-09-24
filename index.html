@@ -30,15 +30,71 @@
     <!-- <input type="text" v-on:keyup.esc="clear" v-model="message"> -->
 
     <!-- <input type="text" v-on:keyup.esc.space.up="clear" v-model="message"> -->
+    <!-- <p>
+      {{ message }}
+    </p>
+    <input type="text" v-model="message" value="hogehoge">
+    <pre>
+      {{$data}}
+    </pre> -->
+    <!-- <pre>
+      {{ message }}
+    </pre>
+    <textarea>{{ message }}</textarea>
+    <textarea v-model="message"></textarea>
+    <pre>{{$data}}</pre> -->
+    <!-- <input type="checkbox" id="checkbox" v-model="checked">
+    <label for="checkbox">
+      {{ checked}}
+    </label>
+    <pre>{{$data}}}</pre> -->
+    <!-- <input type="checkbox" id="red" value="Red" v-model="colors">
+    <label for="red">RED</label>
+    <input type="checkbox" id="green" value="Green" v-model="colors">
+    <label for="red">Green</label>
+    <input type="checkbox" id="blue" value="Blue" v-model="colors">
+    <label for="red">Blue</label>
+    <p>
+      {{colors}}
+    </p> -->
 
-    <button v-on:click="clickHandler">
-      Click1
-    </button>
-
-    <button @click="clickHandler">
-      Click2
-    </button>
-
+    <!-- <input type="radio" id="red" value="Red" v-model="color" >
+    <label for="red">Red</label>
+    <input type="radio" id="green" value="Green" v-model="color" >
+    <label for="green">Green</label>
+    <input type="radio" id="blue" value="Blue" v-model="color" >
+    <label for="blue">Blue</label>
+    <p>
+      {{color}}
+    </p> -->
+    <!-- <select v-model="selected" multiple>
+      <option disable value="">Please select</option>
+      <option>Red</option>
+      <option>Green</option>
+      <option>Blue</option>
+    </select>
+    <p>
+      {{selected}}
+    </p> -->
+    <!-- <input type="text" v-model.lazy="message">
+    <p>
+      {{message}}
+    </p> -->
+    <!-- <p>
+      <input type="text" v-model.trim="message">
+    </p>
+    <p>
+      <input type="text" v-model="message">
+    </p>
+    <pre>
+      {{$data}}
+    </pre> -->
+    <p>
+      <input type="number" v-model.number="age">
+    </p>
+    <p>
+      {{age + 10}}
+    </p>
   </div>
   <script src="app.js"></script>
 </body>
