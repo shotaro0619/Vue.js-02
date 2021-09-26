@@ -89,12 +89,28 @@
     <pre>
       {{$data}}
     </pre> -->
-    <p>
+    <!-- <p>
       <input type="number" v-model.number="age">
     </p>
     <p>
       {{age + 10}}
-    </p>
+    </p> -->
+    <!-- <hello-component></hello-component>
+    <hello-component></hello-component>
+    <hello-component></hello-component> -->
+
+    <!-- <button-counter></button-counter>
+    <button-counter></button-counter>
+    <button-counter></button-counter> -->
+
+    <button v-on:click="show=!show">
+      Change
+    </button>
+    <transition>
+      <p v-show="show">
+        Hello Transition
+      </p>
+    </transition>
   </div>
   <script src="app.js"></script>
 </body>
